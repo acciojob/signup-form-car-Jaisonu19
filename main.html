@@ -8,46 +8,47 @@
 
 <body>
 	 <h1>Signup Form Car</h1>
-    <form action="/submit>
-		<label for="name">Name</label>
+    <form method="post">
+		<label for="name">Name*</label>
 		<input type="text" name="name" id="#name" placeholder="Name" required>
 		<br>
 		<br>
-		<label for="email">Email</label>
+		<label for="email">Email*</label>
         <input type="text" name="email" id="#email" placeholder="Email" required>
 		<br><br>
-        <label for="gender">Gender:-</label>
+        <label for="gender">Gender*</label>
 		<br>
         <input type="radio" name="gender" id="#gender_m" required>
-		<label for="gender">Male</label>
+		<label for="male">Male</label>
 		<input type="radio" name="gender" id="gender_f" required>
-		<label for="gender">Female</label>
+		<label for="female">Female</label>
 		<br><br>
-		<label for="car brands">Car Brands</label>
-		<select name="car Brands" id="#cars" required>
-			<option value="Car">--Please choose an option--</option>
-			<option value="Car">BMW</option>
-            <option value="Car">Audi</option>
-            <option value="Car">Mercedez</option>
-            <option value="Car">creta</option>
+		<label for="cars">Car Brands*</label>
+		<select name="cars" id="#cars">
+			<option value="--Please choose an option--" disabled selected>--Please choose an option--</option>
+			<option id="cars" value="BMW">BMW</option>
+            <option id="cars" value="Audi">Audi</option>
+            <option id="cars" value="Mercedez">Mercedez</option>
+            <option id="cars" value="Creta">Creta</option>
 		</select>
 		 <br><br>
-        <label for="age">Age</label>
+        <label for="age">Age*</label>
         <input type="text" name="age" id="#age" style="width: 30px" placeholder="Age" required>
 		<br><br>
-        <label for="dob">DOB</label>
+        <label for="dob">DOB*</label>
         <input type="date" name="DOB" id="#dob" required>
 		<br><br>
         <label for="phone number">Phone Number</label>
         <input type="text" name="phone number" id="#tel" placeholder="xxx-xxx-xxxx">
 		<br><br>
-        <label for="password">Password</label>
+        <label for="password">Password*</label>
         <input type="text" name="password" id="#password" placeholder="Password" required>
 		 <br><br>
-        <label for="i agree to the tos">I agree to the TOS</label>
+		 <label for="tos">Checkbox*</label>
         <input type="checkbox" name="I agree to the TOS" id="#tos" required>
+        <label for="tos">I agree to the TOS</label>
 		<br><br>
-		 <button type="button">submit</button>
+		 <button type="button">Submit</button>
     </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
